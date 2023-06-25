@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --bg-color: #04044c;
+    --secondary-bg-color: #494A7D;
+    --secondary-color: #25CC88;
+    --text-color: #8789AF;
+    --border-color: #20235b;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-bg-color);
+    flex: 1;
+}
+
+.cepInput{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+input::placeholder{
+    color: var(--text-color);
+    opacity: 0.4;
+}
+
+
+.subInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.subInputs div{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#btnCad{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+/*Loading Page*/
+#loadingPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+/*CSS reutilizavel*/
+.hide{
+    display: none!important;
+}
